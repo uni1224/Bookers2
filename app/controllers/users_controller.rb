@@ -5,13 +5,11 @@ class UsersController < ApplicationController
     @books= @user.books
     @book= Book.new
     @users = User.all
-    @book_new=Book.new
   end
   def index
     @users = User.all
     @book= Book.new
     @user =current_user
-    @book_new=Book.new
   end
 
   def edit
